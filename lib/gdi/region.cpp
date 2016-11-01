@@ -282,7 +282,7 @@ void gRegion::regionOp(const gRegion &reg1, const gRegion &reg2, int opcode, int
 				}
 			}
 			        ytop = r1y1;
-		      } else { 
+		      } else  
 			        ytop = r1y1;
 			        ybot = min(r1->y2, r2->y2);
 		if (ybot > ytop) {
