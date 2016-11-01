@@ -272,7 +272,7 @@ void gRegion::regionOp(const gRegion &reg1, const gRegion &reg2, int opcode, int
 			}
 			ytop = r2y1;
 		} else if (r2y1 < r1y1) {
-		        if (opcode & 2) {
+			if (opcode & 2) {
 				top = max(r2y1, ybot);
 				bot = min(r2->y2, r1y1);
 				if (top != bot) {
@@ -281,10 +281,10 @@ void gRegion::regionOp(const gRegion &reg1, const gRegion &reg2, int opcode, int
 					coalesce(prevBand, curBand);
 				}
 			}
-			        ytop = r1y1;
-		      } else  
-			        ytop = r1y1;
-			        ybot = min(r1->y2, r2->y2);
+			ytop = r1y1;
+		} else
+			ytop = r1y1;
+			ybot = min(r1->y2, r2->y2);
 		if (ybot > ytop) {
 			curBand = rects.size();
 			switch (opcode)
