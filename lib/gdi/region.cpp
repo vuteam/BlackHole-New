@@ -281,9 +281,10 @@ void gRegion::regionOp(const gRegion &reg1, const gRegion &reg2, int opcode, int
 					coalesce(prevBand, curBand);
 				}
 			}
-			ytop = r1y1;
-		} else
-			ybot = min(r1->y2, r2->y2);
+			        ytop = r1y1;
+		      } else { 
+			        ytop = r1y1;
+			        ybot = min(r1->y2, r2->y2);
 		if (ybot > ytop) {
 			curBand = rects.size();
 			switch (opcode)
