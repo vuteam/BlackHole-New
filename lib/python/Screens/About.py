@@ -119,7 +119,7 @@ class About(Screen):
 
     def getDriverInstalledDate(self):
         try:
-            driver = os.popen('opkg list-installed | grep dreambox-dvb-modules').read().strip()
+            driver = os.popen('opkg list-installed | grep vuplus-dvb-modules').read().strip()
             driver = driver.split('-')
             return driver[5]
         except:
@@ -127,7 +127,7 @@ class About(Screen):
 
     def getDriverInstalledDate_proxy(self):
         try:
-            driver = os.popen('opkg list-installed | grep dreambox-dvb-proxy').read().strip()
+            driver = os.popen('opkg list-installed | grep vuplus-dvb-proxy').read().strip()
             driver = driver.split('-')
             driver = driver[4].split('.')
             return driver[0]
