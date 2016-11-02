@@ -733,7 +733,7 @@ class Bp_UsbFormat(Screen):
     def __init__(self, session):
         Screen.__init__(self, session)
         msg = _('This wizard will help you to format Usb mass storage devices for Linux.\n')
-        msg += _('Please be sure that your usb drive is NOT CONNECTED to your Dreambox box before you continue.\n')
+        msg += _('Please be sure that your usb drive is NOT CONNECTED to your Vuplus box before you continue.\n')
         msg += _('If your usb drive is connected and mounted you have to poweroff your box, remove the usb device and reboot.\n')
         msg += _('Press Red button to continue, when you are ready and your usb is disconnected.\n')
         self['key_red'] = Label(_('Continue ->'))
@@ -750,7 +750,7 @@ class Bp_UsbFormat(Screen):
         self.canclose = True
 
     def stepOne(self):
-        msg = _('Connect your usb storage to your Dreambox box\n')
+        msg = _('Connect your usb storage to your Vuplus box\n')
         msg += _('Press Red button to continue when ready.\n\n')
         msg += _('Warning: If your usb is already connected\n')
         msg += _('to the box you have to unplug it, press\n')
